@@ -1,2 +1,3 @@
 # codility
-Solution of codility
+Codility Solution
+
