@@ -1,0 +1,2 @@
+# codility
+Solution of codility
