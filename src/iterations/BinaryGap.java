@@ -1,14 +1,20 @@
 package iterations;
 
 public class BinaryGap {
+	
 	public static int solution(int n) {
+		// Format the integer into a binary string, then into a character array.
 		char[] binaryString = Integer.toBinaryString(n).toCharArray();
+		// Initializing count.
 		int count = 0;
 		int currentCount = 0;
+		// ps jef sucks dicks.
+		// Traverse the array, find the largest length of zeroes.
 		for(int i = 0; i<binaryString.length; i++) {
+			// If zero, increase current count by 1;
 			if(binaryString[i] == '0') {
 				currentCount++;
-
+			// If equals to one, checks if currentCount is larger than count. Replace if true.
 			} else if(binaryString[i] == '1'){
 				if(currentCount > count)
 					count = currentCount;
