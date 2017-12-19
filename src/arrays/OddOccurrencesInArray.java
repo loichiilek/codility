@@ -14,6 +14,8 @@ public class OddOccurrencesInArray {
 		for (int i = 0; i < A.length; i++) {
 			elem ^= A[i];
 			// XOR of same number returns 0
+			// 9 = 1001
+			// 9^9 = 1001 ^ 1001 = 0000
 			System.out.println(Integer.toBinaryString(elem));
 		}
 		return elem;
