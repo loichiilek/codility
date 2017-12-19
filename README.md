@@ -1,3 +1,3 @@
 # codility
-Codility Solution
+Codility Solution in JAVA
 
