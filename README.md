@@ -1,3 +1,3 @@
 # codility
-Codility solution in java. Explanation of answers provided.
+Codility solution in java. With explanation.
 
