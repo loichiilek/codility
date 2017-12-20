@@ -29,13 +29,14 @@ public class MaxCounters {
 				maxVal = (maxVal < counter[array[i]-1]) ? counter[array[i]-1] : maxVal;
 			}
 		}
-		// Idea behind this problem is to NOT call max() every time array[i] = n+1.
+		// The idea behind this problem is to NOT call max() every time array[i] = n+1.
 		// Instead, stores the value as maxUpdate, and check at the end that the value of each element in 
 		// counter >= maxUpdate.
 		for (int i = 0; i < counter.length; i++) {
 			counter[i] = (counter[i] > maxUpdate) ? counter[i] : maxUpdate;
 		}
-		// This returns a complexity of O(n+m) instead of O(n*m) when max() is called every single array[i] = n+1.
+		// This method will return a complexity of O(n+m) 
+		// instead of O(n*m) when max() is called every single array[i] = n+1.
 		return counter;
 	}
 	
