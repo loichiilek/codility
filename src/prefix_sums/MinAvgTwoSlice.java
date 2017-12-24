@@ -15,17 +15,20 @@ public class MinAvgTwoSlice {
 		int index = 0;
 		
 		// Iterate through given array to find the smallest avg.
-		for (int i = 1; i < array.length -2; i++) {
+		for (int i = 0; i < array.length -2; i++) {
+			System.out.println(array[i] + " " + array[i+1]);
 			// Smallest average from sum of 2 elements
-			if((array[i] + array[i+1])/2 < minAvg) {
-				minAvg = (array[i] + array[i+1])/2;
+			if(((double) array[i] + array[i+1])/2 < minAvg) {
+				minAvg = (double) (array[i] + array[i+1])/2;
 				index = i;
 			}
+			System.out.println(minAvg);
 			// Smallest average from sum of 3 elements
-			if((array[i] + array[i+1] + array[i+2])/3 < minAvg) {
-				minAvg = (array[i] + array[i+1] + array[i+2])/3;
+			if(((double) array[i] + array[i+1] + array[i+2])/3 < minAvg) {
+				minAvg = (double) (array[i] + array[i+1] + array[i+2])/3;
 				index = i;
 			}
+			System.out.println(minAvg);
 		}
 		
 		// Checks last 2 elements here instead of the within the for-loop. To prevent null pointer exception.
