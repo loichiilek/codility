@@ -8,7 +8,6 @@ public class BinaryGap {
 		// Initializing count.
 		int count = 0;
 		int currentCount = 0;
-		// ps jef sucks dicks.
 		// Traverse the array, find the largest length of zeroes.
 		for(int i = 0; i<binaryString.length; i++) {
 			// If zero, increase current count by 1;
@@ -24,6 +23,7 @@ public class BinaryGap {
 		return count;
 	}
 	
+	// For Jef my friend, who sucks dick.
 	public static void main(String[] args) {
 		System.out.println(solution(1041));
 	}
